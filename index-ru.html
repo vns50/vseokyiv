@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<a href="#header" class="back-to-top _goto-block"></a>
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__content">
+		<div class="header__top top-header">
+			<div class="top-header__column">
+				<div class="top-header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="index-ru.html" class="menu__link">Главная</a></li>
+							<li class="menu__item1">
+								<a href="novosti-ru/" class="menu__link">Новости</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="novosti-ru/gorod/"
+											class="menu__sublink1">Город</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="novosti-ru/vojna/"
+											class="menu__sublink1">Война</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="reklama-ru/" class="menu__link">Реклама</a></li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item1">
+								<a href="remont-ru/" class="menu__link">Ремонт</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/santehnika/"
+											class="menu__sublink1">Сантехника</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/elektrika/"
+											class="menu__sublink1">Электрика</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/peregorodki/"
+											class="menu__sublink1">Перегородки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/potolki/"
+											class="menu__sublink1">Потолки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/dveri/"
+											class="menu__sublink1">Двери</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/otdelka/"
+											class="menu__sublink1">Отделка</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="nedvizhimost-ru/" class="menu__link">Недвижимость</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/novostroyki/"
+											class="menu__sublink1">Новостройки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/arenda/"
+											class="menu__sublink1">Аренда</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/pokupka/"
+											class="menu__sublink1">Покупка</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="eda-ru/" class="menu__link">Еда</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/gde-poest/"
+											class="menu__sublink1">Где поесть</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/kofejni/"
+											class="menu__sublink1">Кофейни</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/dostavka/"
+											class="menu__sublink1">Доставка</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="top-header__column">
+				<a href="index.html" class="header__logo">
+          <!--<img src="img/header/logo.webp" alt="">-->
+          КИЕВ
+          <div class="header__logo1">Всё о городе</div>
+        </a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__contacts contacts-top">
+					<div data-da="menu__body,2,767" class="entry-footer__columns">
+						<div class="entry-footer__column">
+							<a href="tel:380679151214" class="entry-footer__telback _icon-phone"><span>+380679151214</span></a>
+						</div>
+						<div class="entry-footer__column">
+							<a href="mailto:vseokyiv@gmail.com" class="motion-footer__mail _icon-emal"><span>vseokyiv@gmail.com</span></a>
+						</div>
+					</div>
+					<div data-da="menu__body,2,767" class="contacts-top__column">
+						<div class="contacts-top__item">
+							<div class="header1-container">
+								<div class="calendar-time">
+									<div id="calendar"></div>
+									<div id="time"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-top__column">
+						<!--
+							<div class="contacts-top__tel">
+								<a href="tel:84991234567">+38 067 505 7182</a>
+							</div>
+							<div class="contacts-top__tel">
+								<a href="tel:84991234567">+38 095 397 0947</a>
+							</div>
+							-->
+
+						<div class="contacts-top__column">
+							<div class="menu__item menu__item_lang">
+								<a href="#" class="menu__sublink">RU</a>
+								<button data-spoller type="button" class="menu__arrow menu__arrow_b _icon-aroow"></button>
+
+								<div class="menu__sublist1 menu__sublist_g">
+									<div class="menu__subitem">
+										<a href="index.html" class="menu__link_g"><img src="img/ukr-1.jpg" alt="фото"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+    <ul class="footer-header__motion motion-footer">
+      <li>
+        <a href="" class="motion-footer__login _icon-key"><span>Вход</span></a>
+      </li>
+      <li>
+        <a href="" class="motion-footer__registry _icon-registered"
+          ><span>Регистрация</span></a
+        >
+      </li>
+      <li><a href="mailto:sport@gmail.com" class="motion-footer__mail _icon-emal"><span>vseokyiv@gmail.com</span></a></ul>-->
+
+		<!--<div class="entry-footer__column">
+				<a href="" class="entry-footer__telback"><span>Рекламма</span></a>
+			</div>
+			<div class="footer-header__column">
+				
+				
+				<div data-da="menu__body,2,520" class="footer-header__entry entry-footer">
+					
+					
+					<div class="entry-footer__column">
+						<div class="entry-footer__timing">
+							<p><span>Пн–Пт:</span> 09:00–21:00;</p>
+							<p><span>Сб–Вс:</span> 10:00–20:00</p>
+						</div>
+					</div>
+					<div class="entry-footer__column">
+						<a target="_blank" href="checkout.html" class="entry-footer__cart">
+							<span>12</span>
+						</a>
+					</div>
+				
+				</div>	
+			</div>-->
+	</div>
+</header>
+			<main class="page">
+				<div class="page__container _container">
+
+					<aside data-da="page__body,1,990" class="page__side">
+
+						<div class="page__widget-news widget-news">
+							<a href="" class="widget-news__heading heading-widget">Лента новостей</a>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Зеленский назвал способ принуждения РФ к миру</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>июня</div>
+										<div class="widget-news__text">
+											Россия потеряла более 1 млн убитыми и ранеными в войне против Украины, но её это не волнует. На
+											самом деле руководство страны-агрессора могут беспокоить только жёсткие санкции. Об этом сказал
+											президент Владимир Зеленский на Global Security Forum
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!--
+					<div class="page__widget-recall widget-recall">
+						<a href="" class="widget-recall__heading heading-widget">Отзывы</a>
+						<div class="widget-recall__items">
+							<a href="" class="widget-recall__item">
+								<div class="widget-recall__header">
+									<div class="widget-recall__name">Павел Никифоров</div>
+									<div class="widget-recall__data">12.09.2015</div>
+								</div>
+								<div class="widget-recall__text">
+									Ради экономии места в тренажерном
+									зале приобрел многофункциональный
+									силовой тренажер Life Gear. За такую
+									небольшую стоимость и с такими
+									возможностями, он просто не
+									заменим.
+								</div>
+							</a>
+							<a href="" class="widget-recall__item">
+								<div class="widget-recall__header">
+									<div class="widget-recall__name">Степан Николаевич</div>
+									<div class="widget-recall__data">12.09.2015</div>
+								</div>
+								<div class="widget-recall__text">
+									Спасибо за прекрасный совет,
+									велосипед всей семье понравился
+									и цену за него достойную запросили..
+								</div>
+							</a>
+						</div>
+					</div>-->
+
+					</aside>
+					<section class="page__body">
+
+						<div class="page__swiper swiper">
+							<div class="swiper__slider _swiper">
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title body-swiper__title1">
+											<span>Межкомнатные</span> перегородки
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Преимущества
+										</span>раздвижных<br> систем
+											<span class="text-swiper__text-3">от производителя</span> <br><a href="news1.html"
+												class="text-swiper__text-2">Дом</a>
+										</div>
+										<div class="body-swiper__bottom">
+											<!--
+										<div class="body-swiper__price rub">от 30 000 </div>
+                        -->
+											<a href="#section1" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image5.jpg" alt="Image 5"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title body-swiper__title1">
+											<span>Встигніть за </span> смачненьким
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">де в Києві
+										</span>сьогодні працюють <br> ярмарки
+											<span class="text-swiper__text-3">продовольчі</span><br><span class="text-swiper__text-2">Все
+											новости
+										</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="#title2" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image1.jpg" alt="Image 1"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image2.jpg" alt="Image 2"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image3.jpg" alt="Image 3"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image4.jpg" alt="Image 4"></div>
+
+								</div>
+							</div>
+							<div class="swiper__dotts"></div>
+						</div>
+						<section class="content__seo seo">
+							<div class='container__seo _container'>
+								<h2 class="seo__title title">Межкомнатные раздвижные перегородки: современное решение для вашего
+									пространства</h2>
+
+								<div class="about__text about__text_seo">
+									<div class="services__image-3">
+										<img loading="lazy" src="img/swiper/01.jpg" alt="межкомнатные перегородки" />
+									</div>
+									<p>
+										Раздвижные перегородки — это современное решение для зонирования пространства в квартире, доме или
+										офисе. Они не только придают интерьеру эстетичный вид, но и помогают максимально эффективно
+										использовать
+										доступное пространство. В Киеве такие системы становятся всё более популярными благодаря своей
+										универсальности и широкому ассортименту от производителя.
+									</p>
+									<h3>Преимущества раздвижных систем от производителя</h3>
+									<p>Раздвижные системы обладают множеством преимуществ:</p>
+									<ol>
+										<li>
+											<p><span>Экономия пространства</span></p>
+											В отличие от традиционных дверей, раздвижные конструкции не требуют дополнительного места для
+											открывания.
+										</li>
+										<li>
+											<p><span>Гибкость в зонировании</span></p>
+											Эти конструкции позволяют легко разделить пространство на функциональные зоны, будь то гостиная и
+											кухня или офисное помещение.
+										</li>
+										<li>
+											<p><span>Широкий выбор материалов</span></p>
+											В Киеве можно купить раздвижные стеклянные, деревянные или алюминиевые системы, которые подойдут для
+											любого интерьера.
+										</li>
+										<li>
+											<p><span>Эстетичность</span></p>
+											Современные раздвижные двери добавляют стиль и изысканность вашему дому или офису.
+										</li>
+										<li>
+											<p><span>Простота установки</span></p>
+											Заказать раздвижные конструкции можно с установкой под ключ, что значительно упрощает процесс.
+										</li>
+									</ol>
+
+									<h3 class="seo title">Разновидности раздвижных конструкций</h3>
+									<h4 class="seo">Раздвижные стеклянные перегородки</h4>
+									<p>
+										Раздвижные <a href="steklyannye-peregorodki.html">стеклянные перегородки</a> — идеальное решение для
+										тех, кто хочет добавить больше света в
+										помещение. Они могут быть прозрачными, матовыми или с декоративными элементами. Такие системы часто
+										используются для зонирования комнат или создания душевых кабин.
+									</p>
+									<div class="services__image-7">
+										<img loading="lazy" src="img/swiper/02.jpg" alt="раздвижные перегородки" />
+									</div>
+									<h4 class="seo">Деревянные раздвижные перегородки</h4>
+									<p>
+										Деревянные раздвижные системы придают помещению уют и тепло. Они отлично подходят для классических и
+										современных интерьеров. В Киеве можно заказать такие перегородки в различных вариантах отделки и
+										дизайна.
+									</p>
+
+									<h4 class="seo">Раздвижные перегородки гармошкой</h4>
+
+
+									<p>
+										Этот тип перегородок отличается компактностью и лёгкостью использования. Перегородка гармошкой
+										идеально
+										подходит для помещений с ограниченным пространством, где необходимо быстро и легко изменить
+										конфигурацию
+										комнаты.
+									</p>
+									<h4 class="seo">Раздвижная межкомнатная перегородка телескопическая</h4>
+									<p>
+										Телескопическая раздвижная <a href="peregorodki.html">межкомнатная перегородка</a> — это инновационное
+										решение, которое позволяет
+										максимально эффективно использовать пространство. Благодаря особой конструкции, такие перегородки
+										состоят из нескольких секций, которые плавно задвигаются друг за друга, обеспечивая компактное
+										хранение
+										в открытом состоянии. Телескопические системы идеальны для зонирования больших помещений и создания
+										многофункциональных пространств.
+									</p>
+									<h3 class="seo title">Использование раздвижных систем в разных помещениях</h3>
+									<div class="services__image-3">
+										<img loading="lazy" src="img/swiper/03.jpg" alt="раздвижные перегородки" />
+									</div>
+
+									<h4 class="seo">В квартире или доме</h4>
+									<p>
+										Раздвижные конструкции между кухней и гостиной — популярное решение для создания открытого
+										пространства
+										с возможностью его быстрого разделения. Подвесные системы позволяют легко менять планировку и
+										адаптировать её под текущие нужды.
+									</p>
+
+
+								</div>
+							</div>
+
+						</section>
+					</section>
+
+				</div>
+				<section class="content__seo seo">
+					<div class='container__seo _container'>
+						<div class="about__text about__text_seo">
+
+
+
+							<h4 class="seo">В офисе</h4>
+							<p>
+								Для офисных помещений раздвижные стены и системы — это не только удобство, но и способ создать
+								современный и функциональный интерьер. Такие конструкции помогают эффективно использовать
+								пространство,
+								обеспечивая при этом достаточный уровень звукоизоляции.
+							</p>
+							<h4 class="seo">Где заказать раздвижные конструкции в Киеве?</h4>
+							<p>
+								Компания Putty-Knife предлагает широкий ассортимент раздвижных систем от производителя, которые можно
+								заказать с установкой в Киеве, области и по всей Украине. Наши специалисты помогут вам выбрать
+								идеальное
+								решение для
+								вашего интерьера, будь то раздвижная стеклянная перегородка для душа или деревянная система для
+								зонирования комнаты.
+							</p>
+							<h3 class="seo">Почему выбирают Putty-Knife</h3>
+							<div class="services__image-7">
+								<img loading="lazy" src="img/swiper/04.jpg" alt="раздвижные перегородки" />
+							</div>
+							<ol>
+								<li>
+									<p><span>Высокое качество материалов</span></p>
+									Мы используем только проверенные и надёжные материалы, чтобы ваши перегородки служили долгие годы.
+								</li>
+								<li>
+									<p><span>Индивидуальный подход</span></p> Мы учитываем все пожелания клиентов и предлагаем решения,
+									которые идеально подходят именно вам.
+								</li>
+								<li>
+									<p><span>Профессиональная установка</span></p> Наши мастера обеспечивают быструю и качественную
+									установку раздвижных перегородок.
+								</li>
+							</ol>
+							<h3 class="seo">Дополнительные преимущества работы с нами</h3>
+							<p>
+								Мы предоставляем полный цикл услуг: от замеров и проектирования до монтажа и последующего
+								обслуживания.
+								Наши специалисты готовы проконсультировать вас по любым вопросам и помочь выбрать оптимальное решение
+								для вашего интерьера.
+							</p>
+							<p>
+								Благодаря многолетнему опыту работы и вниманию к деталям, мы гарантируем высокое качество каждой
+								установки.
+							</p>
+
+
+							<div class="p-seo-footer" id="section1">
+								<h3>Подводя итоги</h3>
+								<p>
+									Раздвижные конструкции — это не только практично, но и стильно. Они помогают создать уютное и
+									функциональное пространство в любой комнате. Если вы хотите купить или заказать раздвижные
+									перегородки
+									в Киеве, обращайтесь в компанию <a href="https://putty-knife.kiev.ua/">Putty-Knife</a>. Мы
+									гарантируем
+									высокое качество и
+									профессиональный подход
+									к каждому клиенту.
+								</p>
+								<p>
+									Сотрудничая с нами, вы получаете изделия от производителя с гарантией долговечности и эстетичности.
+									Наши раздвижные системы помогут вам создать пространство, которое будет радовать глаз и обеспечивать
+									комфорт на долгие годы.
+								</p>
+
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+				<section class="content__seo seo">
+					<div class='container__seo _container'>
+						<h2 class="seo__title title" id="title2">
+							Встигніть за смачненьким: де в Києві сьогодні працюють продовольчі ярмарки
+						</h2>
+
+						<div class="about__text about__text_seo">
+							<div class="services__image-3">
+								<img loading="lazy" src="img/swiper/01.jpg" alt="межкомнатные перегородки" />
+							</div>
+							<p>
+								Раздвижные перегородки — это современное решение для зонирования пространства в квартире, доме или
+								офисе. Они не только придают интерьеру эстетичный вид, но и помогают максимально эффективно
+								использовать
+								доступное пространство. В Киеве такие системы становятся всё более популярными благодаря своей
+								универсальности и широкому ассортименту от производителя.
+							</p>
+							<h3>Преимущества раздвижных систем от производителя</h3>
+							<p>Раздвижные системы обладают множеством преимуществ:</p>
+							<ol>
+								<li>
+									<p><span>Экономия пространства</span></p>
+									В отличие от традиционных дверей, раздвижные конструкции не требуют дополнительного места для
+									открывания.
+								</li>
+								<li>
+									<p><span>Гибкость в зонировании</span></p>
+									Эти конструкции позволяют легко разделить пространство на функциональные зоны, будь то гостиная и
+									кухня или офисное помещение.
+								</li>
+								<li>
+									<p><span>Широкий выбор материалов</span></p>
+									В Киеве можно купить раздвижные стеклянные, деревянные или алюминиевые системы, которые подойдут для
+									любого интерьера.
+								</li>
+								<li>
+									<p><span>Эстетичность</span></p>
+									Современные раздвижные двери добавляют стиль и изысканность вашему дому или офису.
+								</li>
+								<li>
+									<p><span>Простота установки</span></p>
+									Заказать раздвижные конструкции можно с установкой под ключ, что значительно упрощает процесс.
+								</li>
+							</ol>
+
+							<h3 class="seo title">Разновидности раздвижных конструкций</h3>
+							<h4 class="seo">Раздвижные стеклянные перегородки</h4>
+							<p>
+								Раздвижные <a href="steklyannye-peregorodki.html">стеклянные перегородки</a> — идеальное решение для
+								тех, кто хочет добавить больше света в
+								помещение. Они могут быть прозрачными, матовыми или с декоративными элементами. Такие системы часто
+								используются для зонирования комнат или создания душевых кабин.
+							</p>
+							<div class="services__image-7">
+								<img loading="lazy" src="img/swiper/02.jpg" alt="раздвижные перегородки" />
+							</div>
+							<h4 class="seo">Деревянные раздвижные перегородки</h4>
+							<p>
+								Деревянные раздвижные системы придают помещению уют и тепло. Они отлично подходят для классических и
+								современных интерьеров. В Киеве можно заказать такие перегородки в различных вариантах отделки и
+								дизайна.
+							</p>
+
+							<h4 class="seo">Раздвижные перегородки гармошкой</h4>
+
+							<p>
+								Этот тип перегородок отличается компактностью и лёгкостью использования. Перегородка гармошкой
+								идеально
+								подходит для помещений с ограниченным пространством, где необходимо быстро и легко изменить
+								конфигурацию
+								комнаты.
+							</p>
+
+
+						</div>
+					</div>
+
+				</section>
+
+			</main>
+			<footer class="footer">
+	<div class="footer__content _container">
+
+		<div class="footer__bottom bottom-footer">
+			<div class="bottom-footer__police">©2015 Все права защищены.</div>
+			<div class="bottom-footer__social social-footer">
+				<a href="" class="social-footer__icon social-footer__icon_telegram _icon-telegram"></a>
+				<a href="" class="social-footer__icon social-footer__icon_whatsapp _icon-whatsapp"></a>
+				<a href="" class="social-footer__icon social-footer__icon_viber _icon-viber"></a>
+				<a href="" class="social-footer__icon social-footer__icon_facebook _icon-facebook"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+
+</html>
