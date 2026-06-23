@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+	<title>Оренда</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- БАЗА ПУТЕЙ -->
+	<script>
+		(function () {
+			let base = document.createElement('base');
+
+			// если localhost → корень
+			if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+				base.href = "/";
+			}
+			// если GitHub Pages → /repo-name/
+			else {
+				let repo = location.pathname.split('/')[1];
+				base.href = "/" + repo + "/";
+			}
+
+			document.head.appendChild(base);
+		})();
+	</script>
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__content">
+		<div class="header__top top-header">
+			<div class="top-header__column">
+				<div class="top-header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__link">Головна</a></li>
+							<li class="menu__item1">
+								<a href="novosti/" class="menu__link">Новини</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="novosti/gorod/"
+											class="menu__sublink1">Місто</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="novosti/vojna/"
+											class="menu__sublink1">Війна</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="reklama/" class="menu__link">Реклама</a></li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item1">
+								<a href="remont/" class="menu__link">Ремонт</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="remont/santehnika/"
+											class="menu__sublink1">Сантехніка</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont/elektrika/"
+											class="menu__sublink1">Електрика</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont/peregorodki/"
+											class="menu__sublink1">Перегородки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont/potolki/"
+											class="menu__sublink1">Стелі</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont/dveri/"
+											class="menu__sublink1">Двері</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont/otdelka/"
+											class="menu__sublink1">Оздоблення</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="nedvizhimost/" class="menu__link">Нерухомість</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost/novostroyki/"
+											class="menu__sublink1">Новобудови</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost/arenda/"
+											class="menu__sublink1">Оренда</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost/pokupka/"
+											class="menu__sublink1">Купівля</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="eda/" class="menu__link">Їжа</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="eda/gde-poest/"
+											class="menu__sublink1">Де поїсти</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda/kofejni/"
+											class="menu__sublink1">Кав’ярні</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda/dostavka/"
+											class="menu__sublink1">Доставка</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="top-header__column">
+				<a href="index.html" class="header__logo">
+          КИЇВ
+          <div class="header__logo1">Все про місто</div>
+        </a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__contacts contacts-top">
+					<div data-da="menu__body,2,767" class="entry-footer__columns">
+						<div class="entry-footer__column">
+							<a href="tel:380679151214" class="entry-footer__telback _icon-phone"><span>+380679151214</span></a>
+						</div>
+						<div class="entry-footer__column">
+							<a href="mailto:vseokyiv@gmail.com" class="motion-footer__mail _icon-emal"><span>vseokyiv@gmail.com</span></a>
+						</div>
+					</div>
+					<div data-da="menu__body,2,767" class="contacts-top__column">
+						<div class="contacts-top__item">
+							<div class="header1-container">
+								<div class="calendar-time">
+									<div id="calendar"></div>
+									<div id="time"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-top__column">
+						<div class="menu__item menu__item_lang">
+							<a href="#" class="menu__link_g"><img src="img/ukr-1.jpg" alt="фото"/></a>
+							<button data-spoller type="button" class="menu__arrow menu__arrow_b _icon-aroow"></button>
+
+							<div class="menu__sublist1 menu__sublist_g">
+								<div class="menu__subitem">
+									<a href="index-ru.html" class="menu__sublink">RU</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+			<main class="page">
+				<a href="#header" class="back-to-top _goto-block"></a>
+				<section class="page__uncos uncos">
+					<div class="uncos__container _container">
+						<div class="uncos__novigation _novigation">
+							<div class="uncos__novigation">
+								<a href="index.html">Головна -</a>
+								<a href="nedvizhimost/">Нерухомість -</a>
+								<a href="nedvizhimost/novostroyki">Новобудови -</a>
+								<a href="nedvizhimost/pokupka">Купівля -</a>
+								Оренда
+							</div>
+						</div>
+						<h2 class="uncos__title title">Оренда</h2>
+						<div class="uncos__row">
+							<div class="news__column news__column_oncos">
+								<div class="news__column-block news__column-block_uncos">
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/02.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/03.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/04.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/05.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="news__column news__column_oncos">
+								<div class="news__column-block news__column-block_uncos">
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/02.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/03.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/04.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+									<div class="news__block-right news__block-right_uncos block-right">
+										<div class="block-right__item block-right__item_uncos">
+											<div class="block-right__image _ibg"><img src="img/news/05.jpg" alt=""></div>
+											<div class="block-right__data">02.03.2019</div>
+											<div class="block-right__title">Изменения в системе гражданской обороны</div>
+											<div class="block-right__text">Государство планирует реализовать значительные улучшения в
+												сфере…</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<div class="uncos__footer">
+					<div class="uncos__pages">
+						<div class="pagging" data-total="@@total">
+	<a href="#" class="pagging__arrow" id="prev"></a>
+	<ul class="pagging__list">
+
+	</ul>
+	<a href="#" class="pagging__arrow" id="next"></a>
+</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+	<div class="footer__content _container">
+
+		<div class="footer__bottom bottom-footer">
+			<div class="bottom-footer__police">©2015 Все права защищены.</div>
+			<div class="bottom-footer__social social-footer">
+				<a href="" class="social-footer__icon social-footer__icon_telegram _icon-telegram"></a>
+				<a href="" class="social-footer__icon social-footer__icon_whatsapp _icon-whatsapp"></a>
+				<a href="" class="social-footer__icon social-footer__icon_viber _icon-viber"></a>
+				<a href="" class="social-footer__icon social-footer__icon_facebook _icon-facebook"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+
+</html>

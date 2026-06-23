@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- БАЗА ПУТЕЙ -->
+	<script>
+		(function () {
+			let base = document.createElement('base');
+
+			// если localhost → корень
+			if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+				base.href = "/";
+			}
+			// если GitHub Pages → /repo-name/
+			else {
+				let repo = location.pathname.split('/')[1];
+				base.href = "/" + repo + "/";
+			}
+
+			document.head.appendChild(base);
+		})();
+	</script>
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__content">
+		<div class="header__top top-header">
+			<div class="top-header__column">
+				<div class="top-header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="index-ru.html" class="menu__link">Главная</a></li>
+							<li class="menu__item1">
+								<a href="novosti-ru/" class="menu__link">Новости</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="novosti-ru/gorod/"
+											class="menu__sublink1">Город</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="novosti-ru/vojna/"
+											class="menu__sublink1">Война</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="novosti-ru/biznes/"
+											class="menu__sublink1">Бизнес</a>
+									</li>
+
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="reklama-ru/" class="menu__link">Реклама</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="reklama-ru/razmeshhenie-reklamy/"
+											class="menu__sublink1">Размещение рекламы</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="reklama-ru/razmeshhenie-statej/"
+											class="menu__sublink1">Размещение статей</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="reklama-ru/kontakty/"
+											class="menu__sublink1">Контакты</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="reklama-ru/o-proekte"
+											class="menu__sublink1">О проекте</a>
+									</li>
+
+								</ul>
+							</li>
+							<!--
+							<li><a href="reklama-ru/" class="menu__link">Реклама</a></li>
+-->
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item1">
+								<a href="remont-ru/" class="menu__link">Ремонт</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/santehnika/"
+											class="menu__sublink1">Сантехника</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/elektrika/"
+											class="menu__sublink1">Электрика</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/peregorodki/"
+											class="menu__sublink1">Перегородки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/potolki/"
+											class="menu__sublink1">Потолки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/dveri/"
+											class="menu__sublink1">Двери</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="remont-ru/otdelka/"
+											class="menu__sublink1">Отделка</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="nedvizhimost-ru/" class="menu__link">Недвижимость</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/novostroyki/"
+											class="menu__sublink1">Новостройки</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/arenda/"
+											class="menu__sublink1">Аренда</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="nedvizhimost-ru/pokupka/"
+											class="menu__sublink1">Покупка</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item1">
+								<a href="eda-ru/" class="menu__link">Еда</a>
+								<button
+									data-spoller
+									type="button"
+									class="menu__arrow menu__arrow_a _icon-aroow"></button>
+								<ul class="menu__sublist">
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/gde-poest/"
+											class="menu__sublink1">Где поесть</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/kofejni/"
+											class="menu__sublink1">Кофейни</a>
+									</li>
+									<li class="menu__subitem">
+										<a
+											href="eda-ru/dostavka/"
+											class="menu__sublink1">Доставка</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="top-header__column">
+				<a href="index.html" class="header__logo">
+          <!--<img src="img/header/logo.webp" alt="">-->
+          КИЕВ
+          <div class="header__logo1">Все о городе</div>
+        </a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__contacts contacts-top">
+					<div data-da="menu__body,2,767" class="entry-footer__columns">
+						<div class="entry-footer__column">
+							<a href="tel:380679151214" class="entry-footer__telback _icon-phone"><span>+380679151214</span></a>
+						</div>
+						<div class="entry-footer__column">
+							<a href="mailto:vseokyiv@gmail.com" class="motion-footer__mail _icon-emal"><span>vseokyiv@gmail.com</span></a>
+						</div>
+					</div>
+					<div data-da="menu__body,2,767" class="contacts-top__column">
+						<div class="contacts-top__item">
+							<div class="header1-container">
+								<div class="calendar-time">
+									<div id="calendar"></div>
+									<div id="time"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-top__column">
+						<!--
+							<div class="contacts-top__tel">
+								<a href="tel:84991234567">+38 067 505 7182</a>
+							</div>
+							<div class="contacts-top__tel">
+								<a href="tel:84991234567">+38 095 397 0947</a>
+							</div>
+							-->
+
+						<div class="contacts-top__column">
+							<div class="menu__item menu__item_lang">
+								<a href="#" class="menu__sublink">RU</a>
+								<button data-spoller type="button" class="menu__arrow menu__arrow_b _icon-aroow"></button>
+
+								<div class="menu__sublist1 menu__sublist_g">
+									<div class="menu__subitem">
+										<a href="index.html" class="menu__link_g"><img src="img/ukr-1.jpg" alt="фото"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+    <ul class="footer-header__motion motion-footer">
+      <li>
+        <a href="" class="motion-footer__login _icon-key"><span>Вход</span></a>
+      </li>
+      <li>
+        <a href="" class="motion-footer__registry _icon-registered"
+          ><span>Регистрация</span></a
+        >
+      </li>
+      <li><a href="mailto:sport@gmail.com" class="motion-footer__mail _icon-emal"><span>vseokyiv@gmail.com</span></a></ul>-->
+
+		<!--<div class="entry-footer__column">
+				<a href="" class="entry-footer__telback"><span>Рекламма</span></a>
+			</div>
+			<div class="footer-header__column">
+				
+				
+				<div data-da="menu__body,2,520" class="footer-header__entry entry-footer">
+					
+					
+					<div class="entry-footer__column">
+						<div class="entry-footer__timing">
+							<p><span>Пн–Пт:</span> 09:00–21:00;</p>
+							<p><span>Сб–Вс:</span> 10:00–20:00</p>
+						</div>
+					</div>
+					<div class="entry-footer__column">
+						<a target="_blank" href="checkout.html" class="entry-footer__cart">
+							<span>12</span>
+						</a>
+					</div>
+				
+				</div>	
+			</div>-->
+	</div>
+</header>
+			<main class="page">
+				<a href="#header" class="back-to-top _goto-block"></a>
+				<div class="page__container _container">
+					<!---->
+					<aside data-da="page__body,1,990" class="page__side">
+
+						<div class="page__widget-news widget-news">
+							<div class="widget-news__heading heading-widget">Лента новостей</div>
+							<div class="widget-news__items">
+								<a href="novosti-ru/gorod/" class="widget-news__item">
+									<div class="widget-news__title">Киев после массированного удара: восстановительные работы на крыше Свято-Успенского собора</div>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>22</span>июня</div>
+										<div class="widget-news__text">
+											<p>
+												В Киеве на территории Печерского района продолжаются масштабные аварийно-восстановительные работы на одном из главных исторических и религиозных объектов города —
+												Свято-Успенском
+												соборе.
+											</p>
+										</div>
+									</div>
+								</a>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Война в Украине и её влияние на современный мир</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>май</div>
+										<div class="widget-news__text">
+											Война остаётся одним из наиболее значимых факторов, влияющих на безопасность государств, развитие экономики и международные отношения.
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="widget-news__items">
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Снижение цен на игровые площадки Jungle Gym</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>12</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+								<div class="widget-news__item">
+									<a href="" class="widget-news__title">Поступление батутов Eclipse!</a>
+									<div class="widget-news__body">
+										<div class="widget-news__data"><span>19</span>авг</div>
+										<div class="widget-news__text">
+											Уважаемые покупатели!
+											Мы рады сообщить вам о снижении
+											цены с 27 июля на детский игровой
+											комплекс
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!--
+					<div class="page__widget-recall widget-recall">
+						<a href="" class="widget-recall__heading heading-widget">Отзывы</a>
+						<div class="widget-recall__items">
+							<a href="" class="widget-recall__item">
+								<div class="widget-recall__header">
+									<div class="widget-recall__name">Павел Никифоров</div>
+									<div class="widget-recall__data">12.09.2015</div>
+								</div>
+								<div class="widget-recall__text">
+									Ради экономии места в тренажерном
+									зале приобрел многофункциональный
+									силовой тренажер Life Gear. За такую
+									небольшую стоимость и с такими
+									возможностями, он просто не
+									заменим.
+								</div>
+							</a>
+							<a href="" class="widget-recall__item">
+								<div class="widget-recall__header">
+									<div class="widget-recall__name">Степан Николаевич</div>
+									<div class="widget-recall__data">12.09.2015</div>
+								</div>
+								<div class="widget-recall__text">
+									Спасибо за прекрасный совет,
+									велосипед всей семье понравился
+									и цену за него достойную запросили..
+								</div>
+							</a>
+						</div>
+					</div>-->
+
+					</aside>
+					<section class="page__body">
+
+						<div class="page__swiper swiper">
+							<div class="swiper__slider _swiper">
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title body-swiper__title1">
+											<span>Восстановительные работы</span> Свято-Успенского собора
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Киев
+										</span>после<br> массированного
+											<span class="text-swiper__text-3">удара</span> <br><a href="novosti-ru/gorod/"
+												class="text-swiper__text-2">Город</a>
+										</div>
+										<div class="body-swiper__bottom">
+											<!--
+										<div class="body-swiper__price rub">от 30 000 </div>
+                        -->
+											<a href="index-ru.html#section1" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/novosti/gorod/01.webp" alt="Image 5"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title body-swiper__title1">
+											<span>Война в</span> Украине
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Влияние
+										</span>войны <br> на современный
+											<span class="text-swiper__text-3">мир</span><br><span class="text-swiper__text-2">Война</span>
+
+										</div>
+										<div class="body-swiper__bottom">
+											<!--
+											<div class="body-swiper__price rub">от 45 000 </div>
+											-->
+											<a href="index-ru.html#section2" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/novosti/vojna/01.webp" alt="война в Украине"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image2.jpg" alt="Image 2"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image3.jpg" alt="Image 3"></div>
+
+								</div>
+								<div class="swiper__slide">
+									<div class="swiper__body body-swiper">
+										<div class="body-swiper__title">
+											<span>Мега</span> распродажа
+										</div>
+										<div class="body-swiper__text text-swiper"><span class="text-swiper__text-1">Успей купить
+										</span>тренажеры <br><span class="text-swiper__text-2">по старой цене</span><br> до их
+											<span class="text-swiper__text-3">повышения</span>
+										</div>
+										<div class="body-swiper__bottom">
+											<div class="body-swiper__price rub">от 45 000 </div>
+											<a href="" class="body-swiper__button"><span>Подробнее</span></a>
+										</div>
+									</div>
+									<div class="swiper__image _ibg"><img src="img/image4.jpg" alt="Image 4"></div>
+
+								</div>
+							</div>
+							<div class="swiper__dotts"></div>
+						</div>
+						<section class="content__seo seo">
+							<div class='container__seo'>
+
+								<h2 class="seo__title title">
+									Киев после массированного удара: восстановительные работы на крыше Свято-Успенского собора
+								</h2>
+
+								<div class="about__text about__text_seo" id="section1">
+
+									<div class="services__image-3">
+										<img loading="lazy" src="img/novosti/gorod/04.webp" alt="Свято-Успенский собор Киев восстановление крыши" />
+									</div>
+
+									<p>
+										В Киеве на территории Печерского района продолжаются масштабные аварийно-восстановительные работы на одном из главных исторических и религиозных объектов города — Свято-Успенском
+										соборе.
+										После повреждений, полученных в результате падения обломков беспилотника, объект находится под постоянным контролем специалистов.
+									</p>
+
+									<p>
+										По информации ГСЧС Киева, спасательные подразделения работают на месте в круглосуточном режиме. Это связано с большим объёмом повреждений и необходимостью срочной стабилизации
+										конструкции, чтобы предотвратить дальнейшее разрушение здания.
+									</p>
+
+									<h3>Ситуация на крыше собора</h3>
+
+									<p>
+										Основные повреждения зафиксированы в верхней части здания. Крыша получила пробоины и разрушения отдельных участков, что создало риск попадания влаги внутрь исторического
+										сооружения.
+									</p>
+
+									<p>
+										Особую опасность представляет воздействие осадков: вода может ускорить разрушение старинной кладки, а также повредить внутренние росписи, иконы и архитектурные элементы, имеющие
+										культурную ценность.
+									</p>
+
+									<div class="services__image-7">
+										<img loading="lazy" src="img/novosti/gorod/03.webp" alt="работы ГСЧС на крыше собора Киев" />
+									</div>
+
+									<h3>Как проходят восстановительные работы</h3>
+
+									<p>
+										Спасатели ГСЧС выполняют комплекс временных восстановительных мероприятий, направленных не на капитальный ремонт, а на стабилизацию объекта.
+									</p>
+
+									<ol>
+										<li>
+											<p><span>Защита повреждённых участков</span></p>
+											Крыша закрывается специальными гидроизоляционными материалами и прочными тентами, которые предотвращают попадание дождя и снега внутрь здания.
+										</li>
+
+										<li>
+											<p><span>Сохранение исторических элементов</span></p>
+											Основная цель работ — защитить внутренние росписи, архитектурные детали и кладку от дальнейшего разрушения.
+										</li>
+
+										<li>
+											<p><span>Укрепление конструкции</span></p>
+											После первичной защиты выполняется монтаж временных деревянных каркасов, которые фиксируют повреждённые участки крыши.
+										</li>
+
+										<li>
+											<p><span>Предотвращение дальнейших рисков</span></p>
+											Все действия направлены на минимизацию угрозы обрушения и подготовку объекта к последующей реставрации.
+										</li>
+									</ol>
+									<div class="services__image-3">
+										<img loading="lazy" src="img/novosti/gorod/02.webp" alt="Свято-Успенский собор Киев восстановление крыши" />
+									</div>
+									<h3>Условия работы спасателей</h3>
+
+									<p>
+										В аварийно-восстановительных работах задействовано около 125 спасателей и 25 единиц специальной техники ГСЧС.
+										Работы проводятся на сложной высоте, на крутых участках крыши, что значительно усложняет процесс восстановления.
+									</p>
+
+									<p>
+										Специалисты используют альпинистское снаряжение, включая страховочные системы, каски и карабины. Это необходимо для обеспечения безопасности при выполнении работ в условиях
+										повреждённой конструкции.
+									</p>
+
+									<h3>Почему работы выполняются круглосуточно</h3>
+
+									<p>
+										Круглосуточный режим связан с необходимостью оперативно стабилизировать объект. Любая задержка может привести к увеличению повреждений, особенно в случае неблагоприятных погодных
+										условий.
+									</p>
+
+									<p>
+										Дополнительным фактором является большое количество разрушенных участков, которые требуют постоянного контроля и поэтапного укрепления.
+									</p>
+
+									<h3>Значение проводимых работ</h3>
+
+									<p>
+										Основная задача спасателей — не восстановление объекта в полном объёме, а его временная стабилизация.
+										Это позволяет сохранить здание до начала полноценной реставрации и минимизировать дальнейшие потери.
+									</p>
+
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
+				<section class="content__seo seo">
+					<div class="container__seo _container">
+
+
+
+						<h2 class="seo__title title" id="section2">Война в Украине и её влияние на современный мир</h2>
+						<div class="services__image-3">
+							<img loading="lazy" src="img/novosti/vojna/02.webp" alt="война в Украине" />
+						</div>
+						<h3>Общее влияние вооружённых конфликтов</h3>
+
+						<div class="about__text about__text_seo">
+							<p>Война остаётся одним из наиболее значимых факторов, влияющих на безопасность государств, развитие экономики и международные отношения. Вооружённые конфликты способны изменять
+								политические процессы, влиять на торговлю, инвестиции, энергетические рынки и качество жизни миллионов людей. В современном мире последствия военных действий часто выходят далеко за
+								пределы территорий, где непосредственно происходят боевые столкновения.</p>
+						</div>
+
+						<h3>Ситуация в Украине и её последствия</h3>
+						<div class="about__text about__text_seo">
+							<p>Для Украины тема войны имеет особое значение. Полномасштабное вторжение России стало одним из крупнейших военных конфликтов в Европе XXI века. События последних лет оказали серьёзное
+								влияние на экономику, инфраструктуру, социальную сферу и вопросы национальной безопасности. Одновременно Украина оказалась в центре международного внимания, а решения, принимаемые
+								мировыми лидерами, всё чаще затрагивают вопросы поддержки страны и обеспечения стабильности в регионе.</p>
+						</div>
+
+						<h3>Современные технологии в войне</h3>
+						<div class="about__text about__text_seo">
+							<p>Современные войны отличаются от конфликтов прошлого. Наряду с традиционными вооружениями всё большую роль играют беспилотные технологии, спутниковая разведка, системы противовоздушной
+								обороны, средства радиоэлектронной борьбы и кибербезопасность.
+
+								Технологическое развитие существенно меняет способы ведения боевых действий и требует постоянной адаптации как со стороны
+								военных, так и со стороны государственных институтов.</p>
+						</div>
+
+						<h3>Влияние на мировую экономику</h3>
+						<div class="services__image-7">
+							<img loading="lazy" src="img/novosti/vojna/03.webp" alt="война в Украине" />
+						</div>
+						<div class="about__text about__text_seo">
+							<p>Военные конфликты оказывают влияние и на мировую экономику. Нарушение логистических цепочек, изменения на рынках сырья и энергоресурсов, санкционная политика и рост оборонных расходов
+								становятся факторами, которые отражаются на многих странах независимо от их географического расположения. Именно поэтому вопросы безопасности сегодня рассматриваются не только как
+								военная, но и как экономическая задача.</p>
+						</div>
+
+						<h3>Международное сотрудничество</h3>
+						<div class="about__text about__text_seo">
+							<p>Важную роль в современных условиях играет международное сотрудничество. Государства, международные организации и гуманитарные фонды участвуют в программах поддержки населения,
+								восстановлении инфраструктуры, обеспечении безопасности и решении гуманитарных проблем. От эффективности такого взаимодействия во многом зависит скорость восстановления пострадавших
+								регионов и устойчивость мировой системы безопасности.</p>
+						</div>
+
+						<h3>Раздел «Война»</h3>
+						<div class="about__text about__text_seo">
+							<p>Раздел «Война» посвящён событиям, связанным с военными конфликтами, международной безопасностью, обороной, дипломатией и последствиями вооружённых противостояний для Украины и мира.
+								Здесь публикуются новости, аналитические материалы, обзоры важных событий и экспертные комментарии, позволяющие лучше понимать происходящие процессы и их влияние на будущее.</p>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="content__seo seo">
+					<div class='container__seo _container'>
+						<div class="about__text about__text_seo">
+
+
+
+							<h4 class="seo">В офисе</h4>
+							<p>
+								Для офисных помещений раздвижные стены и системы — это не только удобство, но и способ создать
+								современный и функциональный интерьер. Такие конструкции помогают эффективно использовать
+								пространство,
+								обеспечивая при этом достаточный уровень звукоизоляции.
+							</p>
+							<h4 class="seo">Где заказать раздвижные конструкции в Киеве?</h4>
+							<p>
+								Компания Putty-Knife предлагает широкий ассортимент раздвижных систем от производителя, которые можно
+								заказать с установкой в Киеве, области и по всей Украине. Наши специалисты помогут вам выбрать
+								идеальное
+								решение для
+								вашего интерьера, будь то раздвижная стеклянная перегородка для душа или деревянная система для
+								зонирования комнаты.
+							</p>
+							<h3 class="seo">Почему выбирают Putty-Knife</h3>
+							<div class="services__image-7">
+								<img loading="lazy" src="img/swiper/04.jpg" alt="раздвижные перегородки" />
+							</div>
+							<ol>
+								<li>
+									<p><span>Высокое качество материалов</span></p>
+									Мы используем только проверенные и надёжные материалы, чтобы ваши перегородки служили долгие годы.
+								</li>
+								<li>
+									<p><span>Индивидуальный подход</span></p> Мы учитываем все пожелания клиентов и предлагаем решения,
+									которые идеально подходят именно вам.
+								</li>
+								<li>
+									<p><span>Профессиональная установка</span></p> Наши мастера обеспечивают быструю и качественную
+									установку раздвижных перегородок.
+								</li>
+							</ol>
+							<h3 class="seo">Дополнительные преимущества работы с нами</h3>
+							<p>
+								Мы предоставляем полный цикл услуг: от замеров и проектирования до монтажа и последующего
+								обслуживания.
+								Наши специалисты готовы проконсультировать вас по любым вопросам и помочь выбрать оптимальное решение
+								для вашего интерьера.
+							</p>
+							<p>
+								Благодаря многолетнему опыту работы и вниманию к деталям, мы гарантируем высокое качество каждой
+								установки.
+							</p>
+
+
+							<div class="p-seo-footer">
+								<h3>Подводя итоги</h3>
+								<p>
+									Раздвижные конструкции — это не только практично, но и стильно. Они помогают создать уютное и
+									функциональное пространство в любой комнате. Если вы хотите купить или заказать раздвижные
+									перегородки
+									в Киеве, обращайтесь в компанию <a href="https://putty-knife.kiev.ua/">Putty-Knife</a>. Мы
+									гарантируем
+									высокое качество и
+									профессиональный подход
+									к каждому клиенту.
+								</p>
+								<p>
+									Сотрудничая с нами, вы получаете изделия от производителя с гарантией долговечности и эстетичности.
+									Наши раздвижные системы помогут вам создать пространство, которое будет радовать глаз и обеспечивать
+									комфорт на долгие годы.
+								</p>
+
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+				<section class="content__seo seo">
+					<div class='container__seo _container'>
+						<h2 class="seo__title title">
+							Встигніть за смачненьким: де в Києві сьогодні працюють продовольчі ярмарки
+						</h2>
+
+						<div class="about__text about__text_seo">
+							<div class="services__image-3">
+								<img loading="lazy" src="img/swiper/01.jpg" alt="межкомнатные перегородки" />
+							</div>
+							<p>
+								Раздвижные перегородки — это современное решение для зонирования пространства в квартире, доме или
+								офисе. Они не только придают интерьеру эстетичный вид, но и помогают максимально эффективно
+								использовать
+								доступное пространство. В Киеве такие системы становятся всё более популярными благодаря своей
+								универсальности и широкому ассортименту от производителя.
+							</p>
+							<h3>Преимущества раздвижных систем от производителя</h3>
+							<p>Раздвижные системы обладают множеством преимуществ:</p>
+							<ol>
+								<li>
+									<p><span>Экономия пространства</span></p>
+									В отличие от традиционных дверей, раздвижные конструкции не требуют дополнительного места для
+									открывания.
+								</li>
+								<li>
+									<p><span>Гибкость в зонировании</span></p>
+									Эти конструкции позволяют легко разделить пространство на функциональные зоны, будь то гостиная и
+									кухня или офисное помещение.
+								</li>
+								<li>
+									<p><span>Широкий выбор материалов</span></p>
+									В Киеве можно купить раздвижные стеклянные, деревянные или алюминиевые системы, которые подойдут для
+									любого интерьера.
+								</li>
+								<li>
+									<p><span>Эстетичность</span></p>
+									Современные раздвижные двери добавляют стиль и изысканность вашему дому или офису.
+								</li>
+								<li>
+									<p><span>Простота установки</span></p>
+									Заказать раздвижные конструкции можно с установкой под ключ, что значительно упрощает процесс.
+								</li>
+							</ol>
+
+							<h3 class="seo title">Разновидности раздвижных конструкций</h3>
+							<h4 class="seo">Раздвижные стеклянные перегородки</h4>
+							<p>
+								Раздвижные <a href="steklyannye-peregorodki.html">стеклянные перегородки</a> — идеальное решение для
+								тех, кто хочет добавить больше света в
+								помещение. Они могут быть прозрачными, матовыми или с декоративными элементами. Такие системы часто
+								используются для зонирования комнат или создания душевых кабин.
+							</p>
+							<div class="services__image-7">
+								<img loading="lazy" src="img/swiper/02.jpg" alt="раздвижные перегородки" />
+							</div>
+							<h4 class="seo">Деревянные раздвижные перегородки</h4>
+							<p>
+								Деревянные раздвижные системы придают помещению уют и тепло. Они отлично подходят для классических и
+								современных интерьеров. В Киеве можно заказать такие перегородки в различных вариантах отделки и
+								дизайна.
+							</p>
+
+							<h4 class="seo">Раздвижные перегородки гармошкой</h4>
+
+							<p>
+								Этот тип перегородок отличается компактностью и лёгкостью использования. Перегородка гармошкой
+								идеально
+								подходит для помещений с ограниченным пространством, где необходимо быстро и легко изменить
+								конфигурацию
+								комнаты.
+							</p>
+
+
+						</div>
+					</div>
+
+				</section>
+
+			</main>
+			<footer class="footer">
+	<div class="footer__content _container">
+
+		<div class="footer__bottom bottom-footer">
+			<div class="bottom-footer__police">©2015 Все права защищены.</div>
+			<div class="bottom-footer__social social-footer">
+				<a href="" class="social-footer__icon social-footer__icon_telegram _icon-telegram"></a>
+				<a href="" class="social-footer__icon social-footer__icon_whatsapp _icon-whatsapp"></a>
+				<a href="" class="social-footer__icon social-footer__icon_viber _icon-viber"></a>
+				<a href="" class="social-footer__icon social-footer__icon_facebook _icon-facebook"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+
+</html>

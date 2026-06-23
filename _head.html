@@ -1,0 +1,30 @@
+<head>
+	<title>@@title</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- БАЗА ПУТЕЙ -->
+	<script>
+		(function () {
+			let base = document.createElement('base');
+
+			// если localhost → корень
+			if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+				base.href = "/";
+			}
+			// если GitHub Pages → /repo-name/
+			else {
+				let repo = location.pathname.split('/')[1];
+				base.href = "/" + repo + "/";
+			}
+
+			document.head.appendChild(base);
+		})();
+	</script>
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
